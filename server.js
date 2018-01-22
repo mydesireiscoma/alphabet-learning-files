@@ -59,3 +59,5 @@ const server = new http.Server((request, response) => {
     response.end()
   }
 })
+
+server.listen(process.env.PORT || 5000);
