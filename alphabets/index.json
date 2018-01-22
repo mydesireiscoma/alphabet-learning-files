@@ -1,0 +1,11 @@
+[
+  {
+    "name": "japanese",
+    "alphabets": [
+      {
+        "name": "katakana",
+        "file": "katakana.zip"
+      }
+    ]
+  }
+]
