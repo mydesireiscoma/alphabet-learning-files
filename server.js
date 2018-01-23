@@ -12,6 +12,7 @@ const server = new http.Server((request, response) => {
   if (requestUrl === '/') {
     response.writeHead(200, { 'Content-Type': 'text/json' })
     response.write(JSON.stringify(availableLanguages))
+    response.end()
   } else if (requestUrl === '/language') {
     const queryLanguage = requestQuery.language
     const queryAlphabet = requestQuery.alphabet
