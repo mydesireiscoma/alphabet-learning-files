@@ -46,7 +46,9 @@ const server = new http.Server((request, response) => {
           response.writeHead(404)
           response.end()
         } else {
-          response.writeHead(200, 'Content-type', 'application/zip')
+          response.setHeader('Status', 200)
+          response.setHeader('Content-Type', 'application/zip');
+          response.setHeader('Content-length', data.byteLength);
           response.end(data)
         }
       })
