@@ -2,10 +2,7 @@
   {
     "name": "japanese",
     "alphabets": [
-      {
-        "name": "katakana",
-        "file": "katakana.zip"
-      }
+      { "name": "katakana" }
     ]
   }
 ]
