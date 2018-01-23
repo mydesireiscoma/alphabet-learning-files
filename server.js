@@ -38,7 +38,7 @@ const server = new http.Server((request, response) => {
         __dirname,
         'alphabets',
         language.name,
-        alphabet.file
+        alphabet.name + '.zip'
       )
 
       fs.readFile(filePath, (err, data) => {
@@ -48,7 +48,7 @@ const server = new http.Server((request, response) => {
         } else {
           response.setHeader('Status', 200)
           response.setHeader('Content-Type', 'application/zip');
-          response.setHeader('Content-length', data.length);
+          response.setHeader('Content-length', data.buffer.byteLength);
           response.end(data)
         }
       })
