@@ -2,7 +2,8 @@
   {
     "name": "japanese",
     "alphabets": [
-      { "name": "katakana" }
+      { "name": "katakana" },
+      { "name": "hiragana" }
     ]
   }
 ]
